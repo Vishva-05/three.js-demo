@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Interactive City Map</title>
+    <title>3D City Explorer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="info">
-        <h1>3D City Explorer</h1>
-        <div id="stats">
-            <p>Temperature: <span id="temperature">25°C</span></p>
-            <p>Traffic: <span id="traffic">Moderate</span></p>
-            <p>Air Quality: <span id="air-quality">Good</span></p>
+        <h1 class="title">3D City Explorer</h1>
+        <div class="stats">
+            <p>Buildings: <span id="buildingCount">0</span></p>
+            <p>FPS: <span id="fps">0</span></p>
         </div>
     </div>
-    <canvas id="cityCanvas"></canvas>
+    <div class="controls-info">
+        <p>🖱️ Left Click: Rotate</p>
+        <p>🖱️ Right Click: Pan</p>
+        <p>⚙️ Scroll: Zoom</p>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
