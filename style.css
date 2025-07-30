@@ -1,11 +1,12 @@
 body {
     margin: 0;
     overflow: hidden;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(to bottom, #1a1a1a, #4a4a4a);
+    font-family: Arial, sans-serif;
 }
 
-canvas {
+#cityCanvas {
+    width: 100vw;
+    height: 100vh;
     display: block;
 }
 
@@ -13,35 +14,22 @@ canvas {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: white;
     background: rgba(0, 0, 0, 0.7);
-    padding: 15px 25px;
+    color: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    z-index: 100;
 }
 
-.title {
+h1 {
+    margin: 0 0 15px 0;
     font-size: 24px;
-    margin: 0;
-    color: #00ff9d;
 }
 
-.stats {
-    margin-top: 10px;
+#stats {
     font-size: 14px;
-    color: #ffffff;
 }
 
-.controls-info {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    font-size: 14px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+#stats p {
+    margin: 5px 0;
 }
